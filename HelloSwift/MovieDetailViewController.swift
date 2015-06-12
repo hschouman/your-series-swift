@@ -21,7 +21,7 @@ class MovieDetailViewController : UIViewController {
     
     required init(coder aDecoder: NSCoder) {
         self.imdbID = ""
-        self.movie = Movie(titleString: "", pictureUrlString: "", imdbIDString: "")
+        self.movie = Movie()
         super.init(coder: aDecoder)
     }
     

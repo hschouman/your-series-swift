@@ -15,6 +15,12 @@ class Movie: NSObject {
     var pictureUrl: String
     var imdbID: String
 
+    override init() {
+        self.title = ""
+        self.pictureUrl = ""
+        self.imdbID = ""
+    }
+    
     init (titleString : String, pictureUrlString : String, imdbIDString: String) {
         self.title = titleString
         self.pictureUrl = pictureUrlString
